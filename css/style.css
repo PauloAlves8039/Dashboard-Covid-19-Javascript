@@ -1,0 +1,35 @@
+/****** CORES *******/
+:root{
+    --titulo-color: #32CD32;
+}
+
+/****** FONTES *******/
+@font-face {
+    font-family: fontTitle;
+    src: url(../assets/fonts/Kanit-Medium.ttf);
+}
+
+/****** GERAL *******/
+h3 {
+    color: var(--titulo-color);
+    font-family: fontTitle;
+}
+
+/****** CARD-PAIS *******/
+#pais {
+    margin-top: 10px;
+}
+
+.card-pais {
+    height: 180px;
+}
+
+.titulo-pais {
+    padding-top: 20px;
+}
+
+#btn-cancelar {
+    margin-top: 15px;
+}
+
+
