@@ -9,7 +9,7 @@
     <link rel='stylesheet' href='css/style.css'>
     <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">    
 </head>
-<body>
+<body class="body-color">
 
     <nav class="navbar navbar-dark bg-dark justify-content-center">
         <a class="navbar-brand" href="#">
@@ -19,11 +19,12 @@
     </nav>
 
     <div class="container">
+        <!--********** PAÍS **********-->
         <section id="pais">
             <div class="d-flex justify-content-center">
-                <div class="card card-pais w-50">
+                <div class="card card-pais cards-dashboard border border-dark">
                     <div class="card-body">
-                      <h3 class="card-title d-flex justify-content-center">País</h3>
+                      <h2 class="card-title d-flex justify-content-center">País</h2>
                       <p class="card-text">
                         <select class="form-control" name="pais" id="pais"></select>
                         <button class="btn btn-outline-dark form-control" id="btn-cancelar">Cancelar</button>
@@ -31,10 +32,79 @@
                     </div>
                   </div>
             </div>
-            
-            <h3 class="titulo-pais d-flex justify-content-center">...</h3>
-            
+            <h1 class="titulo-pais d-flex justify-content-center">......</h1>
         </section>
+
+        <!--********** DASHBOARD **********-->
+        <section id="dashboard">
+            <div class="card-deck bloco">
+                <div class="card casos cards-dashboard border border-dark">
+                    <div class="body-header">
+                        <h4 class="card-text titulo-casos d-flex justify-content-center">Casos</h4>
+                    </div>
+                    <hr>
+                    <div class="card-body">
+                        <h6 class="card-title titulo-casos">
+                            Casos diários: <span id="casos-diarios">00000</span>
+                        </h6>
+                        <h6 class="card-title titulo-casos">
+                            Casos por milhão: <span id="casos-milhao">00000</span>
+                        </h6>
+                        <h6 class="card-title titulo-casos">
+                            Total de casos: <span id="total-casos">00000</span>
+                        </h6>
+                    </div>
+                </div>
+                <div class="card mortes cards-dashboard border border-dark">
+                    <div class="body-header">
+                        <h4 class="card-text titulo-mortes d-flex justify-content-center">Mortes</h4>
+                    </div>
+                    <hr>
+                    <div class="card-body">
+                        <h6 class="card-title titulo-mortes">
+                            Mortes diárias: <span id="mortes-diarias">00000</span>
+                        </h6>
+                        <h6 class="card-title titulo-mortes">
+                            Mortes por milhão: <span id="mortes-milhao">00000</span>
+                        </h6>
+                        <h6 class="card-title titulo-mortes">
+                            Total de mortes: <span id="total-mortes">00000</span>
+                        </h6>
+                    </div>
+                </div>
+                <div class="card testes cards-dashboard border border-dark">
+                    <div class="body-header">
+                        <h4 class="card-text titulo-testes d-flex justify-content-center">Testes</h4>
+                    </div>
+                    <hr>
+                    <div class="card-body titulo-testes">
+                        <h6 class="card-title">
+                            Teste por milhão: <span id="testes-milhao">00000</span>
+                        </h6>
+                        <h6 class="card-title titulo-testes">
+                            Total de teste: <span id="total-testes">00000</span>
+                        </h6>
+                    </div>
+                </div>
+                <div class="card status cards-dashboard border border-dark">
+                    <div class="body-header">
+                        <h4 class="card-text d-flex titulo-status justify-content-center">Status</h4>
+                    </div>
+                    <hr>
+                    <div class="card-body">
+                        <h6 class="card-title titulo-status">
+                            Casos ativos: <span id="casos-ativos">00000</span>
+                        </h6>
+                        <h6 class="card-title titulo-status">
+                            Casos críticos: <span id="casos-criticos">00000</span>
+                        </h6>
+                        <h6 class="card-title titulo-status">
+                            Recuperados: <span id="recuperados">00000</span>
+                        </h6>
+                    </div>
+                </div>
+        </section>
+
     </div>
 
     <script src="js/jquery-3.5.1.slim.min.js"></script>

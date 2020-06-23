@@ -1,6 +1,13 @@
 /****** CORES *******/
 :root{
-    --titulo-color: #32CD32;
+    --titulo-color: #008B8B;
+    --titulo-color-casos: #AB82FF;
+    --titulo-color-mortes: #FF3030;
+    --titulo-color-testes: #1E90FF;
+    --titulo-color-status: #00CD00;
+    --border-color: #696969;
+    --border-color-hover: #363636;
+    --body-color: #F8F8FF;
 }
 
 /****** FONTES *******/
@@ -10,9 +17,21 @@
 }
 
 /****** GERAL *******/
-h3 {
-    color: var(--titulo-color);
+.body-color{
+    background-color: var(--body-color);
+}
+
+h2 {
     font-family: fontTitle;
+}
+
+.cards-dashboard {
+    box-shadow: 0 4px 4px 0 var(--border-color);
+    transition: 0.3s;
+}
+
+.cards-dashboard:hover {
+    box-shadow: 0 5px 5px 0 var(--border-color-hover);
 }
 
 /****** CARD-PAIS *******/
@@ -21,7 +40,8 @@ h3 {
 }
 
 .card-pais {
-    height: 180px;
+    width: 22rem;
+    height: 200px;
 }
 
 .titulo-pais {
@@ -32,4 +52,39 @@ h3 {
     margin-top: 15px;
 }
 
+/****** DASHBOARD *******/
+#dashboard {
+    padding-top: 20px;
+}
 
+.bloco {
+    padding-top: 5px;
+}
+
+.body-header {
+    margin-top: 10px;
+}
+
+/****** CARD-CASOS *******/
+.titulo-casos {
+    color: var(--titulo-color-casos);
+    font-family: fontTitle;
+}
+
+/****** CARD-MORTES *******/
+.titulo-mortes {
+    color: var(--titulo-color-mortes);
+    font-family: fontTitle;
+}
+
+/****** CARD-TESTES *******/
+.titulo-testes {
+    color: var(--titulo-color-testes);
+    font-family: fontTitle;
+}
+
+/****** CARD-STATUS *******/
+.titulo-status {
+    color: var(--titulo-color-status);
+    font-family: fontTitle;
+}
