@@ -20,7 +20,7 @@ números referentes a casos, mortes, testes e o status do Covid-19 em cada país
 
 ## :floppy_disk: Clonar Repositório
 
-```git clone https://github.com/PauloAlves8039/app-be-the-hero.git```
+```git clone https://github.com/PauloAlves8039/Dashboard-Covid-19-Javascript.git```
 
 ## :pencil: Licença
 Esse projeto está sob a licença [MIT](https://github.com/PauloAlves8039/Dashboard-Covid-19-Javascript/blob/master/LICENSE.md)
