@@ -17,6 +17,7 @@ números referentes a casos, mortes, testes e o status do Covid-19 em cada país
 - [CSS3](https://www.w3schools.com/css/).
 - [Javascript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript).
 - [Bootstrap v4.5.0](https://getbootstrap.com/docs/4.5/getting-started/introduction/).
+- [Imagem - Pixabay](https://pixabay.com/pt/).
 
 ## :floppy_disk: Clonar Repositório
 
