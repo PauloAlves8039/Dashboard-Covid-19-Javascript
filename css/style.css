@@ -1,13 +1,12 @@
 /****** CORES *******/
 :root{
     --titulo-color: #008B8B;
+    --titulo-color-pais: #00EE76;
     --titulo-color-casos: #AB82FF;
     --titulo-color-mortes: #FF3030;
     --titulo-color-testes: #1E90FF;
     --titulo-color-status: #00CD00;
-    --border-color: #696969;
-    --border-color-hover: #363636;
-    --body-color: #F8F8FF;
+    --border-color-hover: #00EE76;
 }
 
 /****** FONTES *******/
@@ -17,8 +16,8 @@
 }
 
 /****** GERAL *******/
-.body-color{
-    background-color: var(--body-color);
+body {
+    background-image: url(../assets/img/coronavirus.jpg);
 }
 
 h2 {
@@ -26,12 +25,17 @@ h2 {
 }
 
 .cards-dashboard {
-    box-shadow: 0 4px 4px 0 var(--border-color);
+    -moz-transition: all 0.3s;
+	-webkit-transition: all 0.3s;
     transition: 0.3s;
 }
 
 .cards-dashboard:hover {
     box-shadow: 0 5px 5px 0 var(--border-color-hover);
+    -moz-transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+    transition: 0.3s;
 }
 
 /****** CARD-PAIS *******/
@@ -46,6 +50,7 @@ h2 {
 
 .titulo-pais {
     padding-top: 20px;
+    color: var(--titulo-color-pais);
 }
 
 #btn-cancelar {
